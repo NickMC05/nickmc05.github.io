@@ -63,11 +63,13 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Nicholas (Nick MC) Wilson Kurniawan",
+        "meta_descr": "Roblox/Unity Game Developer | AI NPC | Nicknation Games",
         "header_custom": "",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "",
+        "socialSharingUrl": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/2-500x500.png"
       },
       "components": [
         {

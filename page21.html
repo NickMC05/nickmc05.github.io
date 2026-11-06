@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v6.1.12, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Roblox Dialogue Chatbot System from Scratch</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,400,500,600,700,800,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,400,500,600,700,800,900&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=OG487e"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=OG487e" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-vzfJq7Rww2" once="menu" id="menu2-4q">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-info display-7" href="https://mobiri.se">Nick_MC</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html" target="_blank">Home</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page11.html" target="_blank">Skills</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page7.html" target="_blank">Games</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page8.html" target="_blank">Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page9.html" target="_blank">Achievements</a>
+                    </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page10.html" target="_blank">More</a></li></ul>
+                
+                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="index.html#contacts2-8" target="_blank">
+                        Contacts</a></div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="header9 cid-vzfJq88SDn" id="header9-4r">
+
+    
+
+    
+    
+
+    <div class="text-center container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <div class="image-wrap mb-4">
+                    <img src="assets/images/frkgcxjaaaa7dr7.webp" alt="Image">
+                </div>
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Roblox Dialogue Chatbot System from Scratch</strong></h1>
+                <p class="mbr-text mbr-fonts-style display-4">
+                    This code is abstracted from the specific game context to highlight clean architecture, type safety, optimization, and secure execution.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content4 cid-vzfJq8kJf2" id="content4-4s">
+    
+
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">Document writing assisted by AI.</h4>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfJq8uXIR" id="content5-4t">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">1. Input Sanitization &amp; Tokenization</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Demonstrates efficient string manipulation and preparation for algorithmic processing.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content7 cid-vzfJq8SU0J" id="content7-4w">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <blockquote>
+                
+                <p class="mbr-text mbr-fonts-style display-4">--!strict
+<br>type TokenArray = {string}
+<br>
+<br>local function sanitizeAndTokenize(rawInput: string): TokenArray
+<br>&nbsp; &nbsp; -- 1. Normalize to lowercase
+<br>&nbsp; &nbsp; local cleanInput: string = string.lower(rawInput)
+<br>
+<br>&nbsp; &nbsp; -- 2. Strip punctuation and special characters using pattern matching
+<br>&nbsp; &nbsp; -- %p matches punctuation, %c matches control characters
+<br>&nbsp; &nbsp; cleanInput = string.gsub(cleanInput, "[%p%c]", "")
+<br>
+<br>	-- 3. Tokenize into an array of words
+<br>&nbsp; &nbsp; local tokens: TokenArray = {}
+<br>&nbsp; &nbsp; for word in string.gmatch(cleanInput, "%S+") do
+<br>&nbsp; &nbsp; &nbsp; &nbsp; table.insert(tokens, word)
+<br>&nbsp; &nbsp; end
+<br>
+<br>&nbsp; &nbsp; return tokens
+<br>end</p></blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfJP0fMXd" id="content5-56">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">2. The Heuristic Scoring Core</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Demonstrates algorithmic logic, nested iteration, and performance optimization via early-exit constraints.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content7 cid-vzfJREV6D8" id="content7-57">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <blockquote>
+                
+                <p class="mbr-text mbr-fonts-style display-4">type ResponseTemplate = {
+<br>&nbsp; &nbsp; TopicName: string,
+<br>&nbsp; &nbsp; RequiredWords: {string},
+<br>&nbsp; &nbsp; UserInputKeywords: {string},
+<br>&nbsp; &nbsp; StandardResponses: {string},
+<br>&nbsp; &nbsp; RepeatedResponses: {string}
+<br>}
+<br>
+<br>local function evaluateBestResponse(tokens: TokenArray, database: {ResponseTemplate}): ResponseTemplate?
+<br>&nbsp; &nbsp; local bestScore: number = 0
+<br>&nbsp; &nbsp; local bestTemplate: ResponseTemplate? = nil
+<br>
+<br>&nbsp; &nbsp; for _, template in ipairs(database) do
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- OPTIMIZATION: Early exit. If required words aren't present, skip scoring entirely.
+<br>&nbsp; &nbsp; &nbsp; &nbsp; local hasAllRequired: boolean = true
+<br>&nbsp; &nbsp; &nbsp; &nbsp; for _, reqWord in ipairs(template.RequiredWords) do
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not table.find(tokens, reqWord) then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hasAllRequired = false
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end
+<br>&nbsp; &nbsp; &nbsp; &nbsp; end
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; if hasAllRequired then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; local currentScore: number = 0
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -- Score based on additional keyword density<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for _, token in ipairs(tokens) do
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if table.find(template.UserInputKeywords, token) then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; currentScore += 1
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -- Update best match if this template scored higher
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if currentScore &gt; bestScore then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bestScore = currentScore
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bestTemplate = template
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end
+<br>&nbsp; &nbsp; &nbsp; &nbsp; end
+<br>&nbsp; &nbsp; end
+<br>
+<br>&nbsp; &nbsp; -- Returns nil if no template scored &gt; 0, triggering a fallback response
+<br>&nbsp; &nbsp; return bestTemplate
+<br>end</p></blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfKvVWt2B" id="content5-58">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">3. State Management &amp; Anti-Spam Logic</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Demonstrates memory management, conversational continuity, and defensive programming against abuse.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content7 cid-vzfKEtQjl2" id="content7-59">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <blockquote>
+                
+                <p class="mbr-text mbr-fonts-style display-4">local SessionState = {
+<br>&nbsp; &nbsp; CurrentTopic = "Idle",
+<br>&nbsp; &nbsp; RepetitionCount = 0,
+<br>&nbsp; &nbsp; Sentiment = { Anger = 0, Friendship = 0 }
+<br>}
+<br>
+<br>local THRESHOLDS = {
+<br>&nbsp; &nbsp; WARNING = 3,
+<br>&nbsp; &nbsp; KICK = 5
+<br>}
+<br>
+<br>local function processConversationState(selectedTemplate: ResponseTemplate, player: Player): string
+<br>&nbsp; &nbsp; local newTopic = selectedTemplate.TopicName
+<br>
+<br>&nbsp; &nbsp; if SessionState.CurrentTopic == newTopic then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; SessionState.RepetitionCount += 1
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- Defensive: Prevent infinite loops or database spam
+<br>&nbsp; &nbsp; &nbsp; &nbsp; if SessionState.RepetitionCount &gt;= THRESHOLDS.KICK then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warn(`[Security] Spam detected from {player.Name}. Terminating session.`)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; player:Kick("Excessive conversational repetition detected.")
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return ""
+<br>&nbsp; &nbsp; &nbsp; &nbsp; elseif SessionState.RepetitionCount &gt;= THRESHOLDS.WARNING then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -- Provide a specialized "stop spamming" response
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return selectedTemplate.RepeatedResponses[math.random(1, #selectedTemplate.RepeatedResponses)]
+<br>&nbsp; &nbsp; &nbsp; &nbsp; end
+<br>&nbsp; &nbsp; else
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- Topic Shift: Reset counters and update context
+<br>&nbsp; &nbsp; &nbsp; &nbsp; SessionState.CurrentTopic = newTopic
+<br>&nbsp; &nbsp; &nbsp; &nbsp; SessionState.RepetitionCount = 1
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- Example of sentiment tracking affecting state
+<br>&nbsp; &nbsp; &nbsp; &nbsp; if newTopic == "Compliment" then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SessionState.Sentiment.Friendship += 1
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SessionState.Sentiment.Anger = math.clamp(SessionState.Sentiment.Anger - 1, 0, 10)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; elseif newTopic == "Insult" then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SessionState.Sentiment.Anger += 1
+<br>&nbsp; &nbsp; &nbsp; &nbsp; end
+<br>&nbsp; &nbsp; end
+<br>
+<br>&nbsp; &nbsp; -- Return a standard randomized response from the matched topic
+<br>&nbsp; &nbsp; return selectedTemplate.StandardResponses[math.random(1, #selectedTemplate.StandardResponses)]
+<br>end</p></blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfL65VfXA" id="content5-5b">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">4. Dynamic Mode Switching (Safe Math Evaluation)</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Demonstrates the ability to intercept standard flow for specialized tasks, and crucially, the use of pcall to prevent code injection or crashes.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content7 cid-vzfL5mXufQ" id="content7-5a">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <blockquote>
+                
+                <p class="mbr-text mbr-fonts-style display-4">local function handleDynamicModes(tokens: TokenArray, rawInput: string): string?
+<br>&nbsp; &nbsp; -- Detect if input is purely a math equation (contains digits AND operators)
+<br>&nbsp; &nbsp; local hasNumber: boolean = string.match(rawInput, "%d") ~= nil
+<br>&nbsp; &nbsp; local hasOperator: boolean = string.match(rawInput, "[%+%-%*%/%%]") ~= nil
+<br>
+<br>&nbsp; &nbsp; if hasNumber and hasOperator and SessionState.CurrentTopic == "Idle" then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; SessionState.CurrentTopic = "MathMode" -- Lock state
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- Sanitize strictly to only allow math characters before evaluation
+<br>&nbsp; &nbsp; &nbsp; &nbsp; local safeEquation: string = string.gsub(rawInput, "[^%d%+%-%*%/%%%.%s]", "")
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- SAFE EXECUTION: Wrap dynamic code evaluation in pcall (protected call)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; local success: boolean, result: any = pcall(function()
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; local evalFunc = loadstring("return " .. safeEquation)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return evalFunc and evalFunc() or "Invalid Expression"
+<br>&nbsp; &nbsp; &nbsp; &nbsp; end)
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; SessionState.CurrentTopic = "Idle" -- Unlock state
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; if success and type(result) == "number" then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return `The calculated result is: {result}`
+<br>&nbsp; &nbsp; &nbsp; &nbsp; else
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return "I encountered an error computing that equation."
+<br>&nbsp; &nbsp; &nbsp; &nbsp; end
+<br>&nbsp; &nbsp; end
+<br>
+<br>&nbsp; &nbsp; return nil -- Fall back to standard heuristic scoring
+<br>end</p></blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfLqZRdp2" id="content5-5c">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">5. The Main Orchestrator</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Demonstrates how the components are cleanly composed into a single, readable event listener.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content7 cid-vzfLroA8aS" id="content7-5d">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <blockquote>
+                
+                <p class="mbr-text mbr-fonts-style display-4">local ChatService = game:GetService("Chat")
+<br>
+<br>game.Players.PlayerAdded:Connect(function(player: Player)
+<br>&nbsp; &nbsp; player.Chatted:Connect(function(rawMessage: string)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- 1. Sanitize
+<br>&nbsp; &nbsp; &nbsp; &nbsp; local tokens = sanitizeAndTokenize(rawMessage)
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- 2. Check for Dynamic Modes first (e.g., Math, Commands)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; local modeResponse = handleDynamicModes(tokens, rawMessage)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; if modeResponse then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ChatService:Chat(player.Character.Head, modeResponse, Enum.ChatColor.Blue)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return
+<br>&nbsp; &nbsp; &nbsp; &nbsp; end
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- 3. Heuristic Scoring
+<br>&nbsp; &nbsp; &nbsp; &nbsp; local bestMatch = evaluateBestResponse(tokens, ResponseDatabase)
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- 4. Generate Reply (or fallback)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; local finalReply: string
+<br>&nbsp; &nbsp; &nbsp; &nbsp; if bestMatch then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; finalReply = processConversationState(bestMatch, player)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; else
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; finalReply = FallbackDatabase[math.random(1, #FallbackDatabase)]
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SessionState.CurrentTopic = "Idle" -- Reset on misunderstanding
+<br>&nbsp; &nbsp; &nbsp; &nbsp; end
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- 5. Output to player
+<br>&nbsp; &nbsp; &nbsp; &nbsp; if finalReply ~= "" then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ChatService:Chat(player.Character.Head, finalReply, Enum.ChatColor.Blue)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; end
+<br>&nbsp; &nbsp; end)
+<br>end)</p></blockquote>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/3026355" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com">Mobirise.com </a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+</body>
+</html>

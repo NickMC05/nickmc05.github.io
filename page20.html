@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v6.1.12, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v6.1.12, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Autonomous NPC Simulation Framework</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,400,500,600,700,800,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend:100,200,300,400,500,600,700,800,900&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=95ihPj"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=95ihPj" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-vzfAxWMRBO" once="menu" id="menu2-41">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-info display-7" href="https://mobiri.se">Nick_MC</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html" target="_blank">Home</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page11.html" target="_blank">Skills</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page7.html" target="_blank">Games</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page8.html" target="_blank">Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page9.html" target="_blank">Achievements</a>
+                    </li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="page10.html" target="_blank">More</a></li></ul>
+                
+                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="index.html#contacts2-8" target="_blank">
+                        Contacts</a></div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="header9 cid-vzfAxX0hKf" id="header9-42">
+
+    
+
+    
+    
+
+    <div class="text-center container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <div class="image-wrap mb-4">
+                    <img src="assets/images/screenshot-2024-06-15-165222-1254x790.webp" alt="Image">
+                </div>
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-2"><strong>Autonomous NPC Simulation Framework</strong></h1>
+                <p class="mbr-text mbr-fonts-style display-4">
+                    This document outlines the architecture of a multi-layered NPC AI system that simulates believable city life. Citizens follow 24-hour schedules, navigate a hand-authored waypoint graph using Dijkstra's algorithm, compete for shared resources (seats, queues, workstations), and respond to dynamic interruptions—all without centralized coordination.</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content4 cid-vzfAVjqtqT" id="content4-44">
+    
+
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">Document writing assisted by AI.</h4>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfBNQsy8X" id="content5-46">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">1. System Overview</h4>
+                <p class="mbr-text mbr-fonts-style display-7">The AI operates on three architectural layers, each solving a distinct problem.<br><br><strong>Schedule Layer</strong><br>Responsibility: Decides where the NPC should be based on the time of day.<br>Update Rate: Every 0.25 seconds.<br><br><strong>Navigation Layer</strong><br>Responsibility: Computes how to reach the destination using the shortest path on a waypoint graph.<br>Update Rate: On demand.<br><br><strong>Activity Layer</strong><br>Responsibility: Defines what the NPC does upon arrival, such as queueing, sitting, working, or wandering.<br>Update Rate: Event driven.<br><br>This separation means adding a new location, such as a library, requires only a new activity script and schedule entry. No changes to the navigation or scheduling core are needed.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfD0qiL2W" id="content5-48">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">2. Schedule Driven Behavior Architecture</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Each NPC owns a 24 entry schedule table mapping each hour to a destination activity. The scheduler runs a continuous polling loop that checks the current in game hour against the NPC active state.<br><br><strong>Key Design Decisions:<br></strong><br><strong>Polling Over Events</strong><br>The schedule checks every 0.25 seconds rather than binding to time change events. This allows the system to handle time skips, pauses, and synchronization issues without missing triggers.<br><br><strong>State Guard</strong><br>The scheduler only issues a new goTo command if the NPC CurrentActivity differs from the scheduled destination. This prevents redundant path computations.<br><br><strong>Activity Locking</strong><br>When an NPC begins an activity, its state is set to DoingStuff. This prevents the scheduler from overriding the activity until it completes.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content7 cid-vzfESOco6Y" id="content7-4e">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <blockquote>
+                <h5 class="mbr-section-title mbr-fonts-style mb-2 display-7"><strong>Refactored Pseudocode</strong></h5>
+                <p class="mbr-text mbr-fonts-style display-4"><br>-- Runs continuously on each NPC
+<br>local function scheduleLoop()
+<br>&nbsp; &nbsp; while true do
+<br>&nbsp; &nbsp; &nbsp; &nbsp; task.wait(0.25)
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; local currentHour = getInGameHour()  -- 0-23
+<br>&nbsp; &nbsp; &nbsp; &nbsp; local scheduledDestination = npc.Schedule[currentHour]
+<br>
+<br>&nbsp; &nbsp; &nbsp; &nbsp; -- Only act if the NPC isn't already doing the right thing
+<br>&nbsp; &nbsp; &nbsp; &nbsp; if npc.CurrentActivity ~= scheduledDestination then
+<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; goTo(scheduledDestination)
+<br>&nbsp; &nbsp; &nbsp; &nbsp; end
+<br>&nbsp; &nbsp; end
+<br>end</p></blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content7 cid-vzfFg93iWb" id="content7-4f">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <blockquote>
+                <h5 class="mbr-section-title mbr-fonts-style mb-2 display-7"><strong>Example Schedule Data</strong></h5>
+                <p class="mbr-text mbr-fonts-style display-4"><br>npc.Schedule = {
+<br>&nbsp; &nbsp; ["00.00"] = "EpsilonApt1",  -- Sleeping at home
+<br>&nbsp; &nbsp; ["07.00"] = "RandomWalk",   -- Commuting
+<br>&nbsp; &nbsp; ["08.00"] = "NicknationOffice", -- Work
+<br>&nbsp; &nbsp; ["12.00"] = "Cafe",         -- Lunch
+<br>&nbsp; &nbsp; ["13.00"] = "NicknationOffice", -- Back to work
+<br>&nbsp; &nbsp; ["18.00"] = "Gym",          -- Exercise
+<br>&nbsp; &nbsp; ["20.00"] = "Park",         -- Leisure
+<br>&nbsp; &nbsp; ["22.00"] = "EpsilonApt1",  -- Home
+<br>}</p></blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfFoNbm6S" id="content5-4g">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">3. Waypoint Graph &amp; Dijkstra Pathfinding</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Instead of relying on Roblox built in PathfindingService, which operates on navigation meshes and can be unpredictable in complex multi floor environments, the system uses a hand authored waypoint graph with a custom Dijkstra implementation.<br><br><strong>Graph Construction</strong><br><br>Waypoints are physical parts placed in the world and connected through PathfindingLink attachments.<br><br>Intersection nodes with three or four connecting roads contain sub nodes for directional routing. This prevents NPCs from making illegal U turns at junctions.<br><br>Edge weights are calculated using Euclidean distances between connected waypoint positions during initialization.<br><br><strong>The Algorithm</strong><br><br>The pathfinding module builds an adjacency list at startup and resolves pathfinding queries using Dijkstra algorithm.<br><br><strong>Why Dijkstra Instead of A Star</strong><br><br>For a static waypoint graph containing fewer than 500 nodes, Dijkstra algorithm has negligible computational cost. Its time complexity is O of V squared in this implementation, which is acceptable for small graphs.<br><br>A star would require a consistent heuristic function tuned to the map layout. This would add complexity without a measurable benefit at this scale. A star remains a potential optimization for larger worlds.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfFLeaKeF" id="content5-4i">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">4. Activity State Machine</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Each location has a dedicated activity script that defines what the NPC does upon arrival. The system uses an implicit state machine with the following states.<strong><br></strong><br><strong>Idle or Scheduled</strong><br><strong><br></strong>The NPC is waiting for its next scheduled activity.<br><br><strong>Walking to Destination</strong><br><strong><br></strong>The NPC is navigating toward its assigned location.<br><br><strong>Doing Stuff</strong><br><strong><br></strong>The NPC is performing the activity defined by the activity script.<br><br><strong>Talking</strong><strong><br></strong><br>The NPC has been interrupted by a conversation and will resume afterward.<br><br><strong>State Transitions</strong><strong><br></strong><br>- Idle or Scheduled transitions to Walking to Destination when goTo is called.<br>- Walking to Destination transitions to Doing Stuff when the NPC arrives.<br>- Doing Stuff transitions back to scheduling when the activity completes.<br>- Walking to Destination can transition to Talking when interrupted.<br>- Talking transitions back to navigation when the conversation ends.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content7 cid-vzfGb0vBO4" id="content7-4j">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <blockquote>
+                <h5 class="mbr-section-title mbr-fonts-style mb-2 display-7"><strong>Activity Script Pattern</strong></h5>
+                <p class="mbr-text mbr-fonts-style display-4"><br>-- Generic Activity Script Template
+<br>while not script.Disabled do
+<br>&nbsp; &nbsp; -- 1. WAIT for the scheduler to assign this activity
+<br>&nbsp; &nbsp; repeat task.wait() until npc.CurrentActivity == "MyLocation"
+<br>
+<br>&nbsp; &nbsp; -- 2. LOCK the state to prevent scheduler override
+<br>&nbsp; &nbsp; npc.CurrentActivity = "DoingStuff"
+<br>
+<br>&nbsp; &nbsp; -- 3. ACQUIRE a resource (seat, queue slot, workstation)
+<br>&nbsp; &nbsp; local resource = acquireAvailableResource()
+<br>    resource.Occupied.Value = true
+<br>
+<br>&nbsp; &nbsp; -- 4. NAVIGATE to the resource
+<br>&nbsp; &nbsp; navigateTo(resource)
+<br>
+<br>&nbsp; &nbsp; -- 5. PERFORM the activity
+<br>&nbsp; &nbsp; performActivity(resource)
+<br>
+<br>&nbsp; &nbsp; -- 6. RELEASE the resource and unlock state
+<br>&nbsp; &nbsp; resource.Occupied.Value = false
+<br>&nbsp; &nbsp; npc.CurrentActivity = "MyLocation"  -- Re-enable scheduling
+<br>
+<br>&nbsp; &nbsp; -- 7. WAIT until the scheduler assigns a new destination
+<br>&nbsp; &nbsp; repeat task.wait() until npc.CurrentActivity ~= "MyLocation"
+<br>end<br></p></blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfGuf4R1g" id="content5-4k">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                
+                <p class="mbr-text mbr-fonts-style display-7">The activity script waits until the scheduler assigns the location, locks the activity state, acquires a resource, navigates to it, performs the activity, releases the resource, and waits for the next destination.<br><br><strong>Activity Examples:</strong><br><br><strong>Cafe</strong><br>Behavior: Queue, order, sit, and drink.<br>Duration: Approximately 30 seconds.<br>Resource Contention: Four queue stages and six seats.<br><br><strong>Office</strong><br>Behavior: Walk to a desk, sit, and work.<br>Duration: Until the schedule changes.<br>Resource Contention: Forty five desks.<br><br><strong>Gym</strong><br>Behavior: Walk to equipment and exercise.<br>Duration: Until the schedule changes.<br>Resource Contention: Eighteen machines.<br><br><strong>Apartment</strong><br>Behavior: Randomly cook, sit, sleep, or use a computer.<br>Duration: Approximately 45 seconds per action.<br>Resource Contention: Furniture in individual rooms.<br><br><strong>Park</strong><br>Behavior: Walk to a bench and sit.<br>Duration: Until the schedule changes.<br>Resource Contention: Twelve benches.<br><br><strong>Random Walk</strong><br>Behavior: Wander between street waypoints.<br>Duration: Continuous.<br>Resource Contention: None.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfGLdIF4E" id="content5-4l">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">5. Resource Contention and Queue Management</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Multiple NPCs competing for limited resources, such as seats and queue positions, are a primary source of emergent behavior. The system handles this through occupancy locks and retry loops.<br><br><strong>Seat Contention<br></strong><br>Locations with many equivalent seats, such as the gym, park, and office, use a simple resource acquisition function.<br><br><strong>Queue Management<br></strong><br>At the cafe, NPCs progress through a four stage FIFO queue before reaching the counter. Each stage has an occupancy lock.<br><br><strong>Emergent Behavior</strong><br><br>This approach naturally creates visible queues that grow and shrink based on how many NPCs are scheduled for lunch at the same time. No centralized queue manager is required.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfH0aWhgO" id="content5-4m">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">6. Locomotion Controller</h4>
+                <p class="mbr-text mbr-fonts-style display-7">The cogFollowPath function handles movement along the computed waypoint path. It includes several robustness features.<br><br><strong>Stuck Detection and Recovery</strong><br><br>NPCs can get stuck on geometry, other NPCs, or physics glitches. The controller uses a timeout based retry mechanism.<br><br><strong>Sit and Stand Management</strong><br><br>Roblox Humanoid Sit can be triggered unexpectedly, such as when walking past a Seat object. The controller actively manages this state to prevent movement issues.<br><br><strong>Traffic Light Integration</strong><br><br>Intersection waypoints use color coded signals. Red means stop and green means go. The path follower checks waypoint colors and blocks movement while a red light is active.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfHg2nPHj" id="content5-4n">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">7. Interruption and Resume System</h4>
+                <p class="mbr-text mbr-fonts-style display-7">NPCs can be interrupted while walking by player interactions, such as a chatbot system.<br><br>The interruption system works as follows.<br><br><strong>Detection</strong><br><br>Every movement loop checks the IsTalking state at regular intervals.<br><br><strong>Immediate Halt</strong><br><br>If the NPC is talking, the path follower returns immediately, leaving the NPC at its current position.<br><br><strong>State Preservation</strong><br><br>The CurrentWaypoint value is preserved so the NPC knows where it was heading.<br><br><strong>Resume Logic</strong><br><br>After the conversation ends, the goTo function detects the interruption and recomputes a path from the NPC current position to the original destination.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfHBwsa3k" id="content5-4o">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">8. Dual Navigation Systems</h4>
+                <p class="mbr-text mbr-fonts-style display-7">The architecture supports two independent navigation graphs.<br><br><strong>Pedestrian Graph</strong><br>Nodes: workspace.Waypoints.<br>Used By: All NPC citizens.<br>Purpose: Sidewalks, crosswalks, and building interiors.<br><br><strong>Vehicle Graph</strong><br>Nodes: workspace.Carpoints.<br>Used By: Cars, buses, and emergency vehicles.<br>Purpose: Road networks with traffic rules.<br><br>Both graphs use the same Dijkstra module but operate on separate adjacency lists. This prevents pedestrians from routing through highways and vehicles from routing through parks.<br><br><strong>Why This Is a Good Method:</strong><br><br><strong>Scalable Architecture<br></strong>The three layer separation between scheduling, navigation, and activities allows new locations, schedules, and behaviors to be added without modifying the core systems.<br><br><strong>Emergent Behavior from Simple Rules<br></strong>Queues form naturally, rush hour congestion appears at intersections, and apartments feel lived in. These behaviors emerge from occupancy locks and schedule data rather than scripted sequences.<br><br><strong>Custom Pathfinding</strong><br>The system demonstrates the ability to implement graph algorithms from scratch instead of relying exclusively on built in engine features.<br><br><strong>Robustness Engineering</strong><br>Stuck detection, sit state recovery, traffic light integration, and interruption handling demonstrate consideration of practical edge cases.<br><br><strong>Data Driven Design</strong><br>NPC behavior is defined by schedule tables and waypoint graphs rather than hardcoded logic. Designers can create new citizen routines by modifying data.<br><br><strong>Resource Management</strong><br>The occupancy lock pattern provides a straightforward way to manage resource contention between multiple agents. Careful handling of resource acquisition and release is necessary to prevent deadlocks.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-vzfIpv5Y7l" id="content5-4p">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">9. Future Improvements</h4>
+                <p class="mbr-text mbr-fonts-style display-7"><strong>Hierarchical Clustering and Pathfinding<br></strong>For worlds with more than 1000 waypoints, partition the graph into districts and use Hierarchical Pathfinding A Star to reduce pathfinding costs.<br><br><strong>Utility AI Layer</strong><br>Replace the rigid schedule with a needs based system involving hunger, energy, and social needs. The system could dynamically select activities based on these needs.<br><br><strong>Crowd Simulation</strong><br>Add local avoidance using Reciprocal Velocity Obstacles or Optimal Reciprocal Collision Avoidance on top of waypoint navigation to improve movement in dense areas.<br><br><strong>Event Driven Scheduling</strong><br>Replace the polling loop with Lighting GetPropertyChangedSignal using ClockTime to reduce unnecessary polling and respond directly to time changes.<br></p>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/3026355" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-creator.html">Best AI Website Creator</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+</body>
+</html>
